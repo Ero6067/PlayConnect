@@ -1,3 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://kris123:kris123@devconnector-hivty.mongodb.net/test?retryWrites=true&w=majority"
+	"mongoURI": "mongodb+srv://kris123:kris123@devconnector-hivty.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "supersecrettoken"
 }
