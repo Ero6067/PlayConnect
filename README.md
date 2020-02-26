@@ -12,7 +12,7 @@ Uses Javascript, Express, MongoDB, and React/Redux
 # Run
 
 ```sh
-git clone https://github.com/Ero6067/<repo>.git
+git clone https://github.com/Ero6067/PlayConnect.git
 ```
 
 Install dependancies
