@@ -8,6 +8,7 @@ const { check, validationResult } = require("express-validator");
 
 const User = require("../../models/User");
 
+//#region Register User
 // @route   POST api/users
 // @desc    Register User
 // @access  Public
@@ -85,5 +86,6 @@ router.post(
 		}
 	}
 );
+//#endregion
 
 module.exports = router;
