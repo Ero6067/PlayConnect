@@ -215,33 +215,33 @@ router.post(
 //#endregion
 
 //#region Remove a comment
-/// @route    POST api/posts/comment/:id/:comment_id
+// @route    Delete api/posts/comment/:id/:comment_id
 // @desc     Remove a comment from a post
 // @access   Private
-router.delete("/comment/:id/:comment_id", auth, async (req, res) => {
+router.delete("/comment/:post_id/:comment_id", auth, async (req, res) => {
 	try {
-		const post = await Post.findById(req.params.id);
-
+		const post = await Post.findById(req.params.post_id);
+		if (!post) {
+			return res.status(404).json({ msg: "Post does not exist" });
+		}
 		//Pull out comment
 		const comment = post.comments.find(
-			comment => comment.id === req.params.comment_id
+			comment => comment.id.toString() === req.params.comment_id
 		);
 
 		//Make sure comment exists
 		if (!comment) {
 			return res.status(400).json({ msg: "Comment does not exist" });
 		}
-
 		// check user
 		if (comment.user.toString() !== req.user.id) {
 			return res.status(401).json({ msg: "User not authorized" });
 		}
-
 		// Get remove index
 		const removeIndex = post.comments
-			.map(comment => comment.user.toString())
-			.indexOf(req.user.id);
-
+			.map(comment => comment.id.toString())
+			.indexOf(req.params.comment_id);
+		// Remove Id
 		post.comments.splice(removeIndex, 1);
 
 		await post.save();
@@ -253,5 +253,7 @@ router.delete("/comment/:id/:comment_id", auth, async (req, res) => {
 	}
 });
 //#endregion
+
+//TODO update comments
 
 module.exports = router;
