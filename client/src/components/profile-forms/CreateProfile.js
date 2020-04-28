@@ -167,7 +167,12 @@ const CreateProfile = ({ createProfile, history }) => {
 
 						<div className="form-group social-input">
 							<i className="fab fa-facebook fa-2x"></i>
-							<input type="text" placeholder="Facebook URL" name="facebook" />
+							<input
+								type="text"
+								placeholder="Facebook URL"
+								name="facebook"
+								value={facebook}
+							/>
 						</div>
 
 						<div className="form-group social-input">
