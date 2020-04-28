@@ -9,6 +9,7 @@ import {
 	CLEAR_PROFILE,
 	ACCOUNT_DELETED,
 	GET_REPOS,
+	RESET_PROFILE_LOADING,
 } from "./types";
 
 // Get current users profile
@@ -34,6 +35,7 @@ export const getCurrentProfile = () => async (dispatch) => {
 // Get all profiles
 export const getProfiles = () => async (dispatch) => {
 	dispatch({ type: CLEAR_PROFILE });
+	dispatch({ type: RESET_PROFILE_LOADING });
 	try {
 		const res = await axios.get("/api/profile");
 
