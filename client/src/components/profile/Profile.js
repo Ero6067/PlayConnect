@@ -14,6 +14,7 @@ const Profile = ({
 		getProfileById(match.params.id);
 	}, [getProfileById]);
 
+	console.log(match.params._id);
 	return <div>PROFILE</div>;
 };
 
