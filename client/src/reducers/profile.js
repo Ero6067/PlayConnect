@@ -38,6 +38,7 @@ export default function (state = initState, action) {
 				...state,
 				error: payload,
 				loading: false,
+				prodile: null,
 			};
 		case CLEAR_PROFILE:
 			return {
