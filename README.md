@@ -3,6 +3,7 @@
 Written by Kris Lafrance
 
 Uses Javascript, Express, MongoDB, React/Redux, and NodeJS
+
 [Link to Dev-Connector](https://arcane-caverns-01368.herokuapp.com/)
 
 # Screenshot
