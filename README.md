@@ -6,7 +6,7 @@ Uses Javascript, Express, MongoDB, React/Redux, and NodeJS
 
 # Screenshot
 
-![DevConnector Users](/client/src/img/devUser.JPG)
+![DevConnector Users](/client/src/img/devUsers.JPG)
 ![DevConnector Post](/client/src/img/devPosts.JPG)
 
 # Features
