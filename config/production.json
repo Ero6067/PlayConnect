@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://kris123:kris123@devconnector-hivty.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "supersecrettoken",
+	"githubClientId": "8e43dd40042047356393",
+	"githubSecret": "89a3d275874009b9c238683f5a9815046fcb5f44"
+}
