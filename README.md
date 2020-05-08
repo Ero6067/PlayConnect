@@ -4,6 +4,11 @@ Written by Kris Lafrance
 
 Uses Javascript, Express, MongoDB, React/Redux, and NodeJS
 
+# Screenshot
+
+![DevConnector Logo](client/img/devLogo.png)
+![DevConnector Post](client/img/devPosts.png)
+
 # Features
 
 - Social network application
