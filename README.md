@@ -1,28 +1,28 @@
-# PlayConnect MERN stack
+# Dev-Connect MERN stack
 
 Written by Kris Lafrance
 
-Uses Javascript, Express, MongoDB, and React/Redux
+Uses Javascript, Express, MongoDB, React/Redux, and NodeJS
 
 # Features
 
 - Social network application
-- MERN stack
+- Allows users to make a profile, makes posts, and comment on them
 
 # Run
 
 ```sh
-git clone https://github.com/Ero6067/PlayConnect.git
+- git clone https://github.com/Ero6067/PlayConnect.git
 ```
 
 Install dependancies
 
 ```sh
-npm install
+- npm install
 ```
 
 Run App
 
 ```sh
-npm start
+- npm run dev
 ```
