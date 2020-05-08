@@ -13,6 +13,8 @@ Uses Javascript, Express, MongoDB, React/Redux, and NodeJS
 
 - Social network application
 - Allows users to make a profile, makes posts, and comment on them
+- MondoDB used for backend
+- uses React Hooks
 
 # Run
 
